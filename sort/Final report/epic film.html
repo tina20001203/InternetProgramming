@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic film</title>
+    <style>
+#primary_nav_wrap
+{
+	margin-top:15px;
+  text-align: center;
+}
+
+#primary_nav_wrap ul
+{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+#primary_nav_wrap ul a
+{
+	display:block;
+	color:rgb(255, 255, 255);
+	text-decoration:none;
+  margin: 0 auto;
+	font-weight:700;
+	font-size:12px;
+	line-height:32px;
+	padding:0 15px;
+	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+#primary_nav_wrap ul li.current-menu-item
+{
+	background:rgb(90, 90, 90)
+}
+
+#primary_nav_wrap ul li:hover
+{
+	background:#888888
+}
+
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:rgb(0, 0, 0);
+	padding:0
+}
+
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:200px
+}
+
+#primary_nav_wrap ul ul a
+{
+	line-height:120%;
+	padding:10px 15px
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block
+}
+
+        h1 {font-family: 微軟正黑體;}
+        h2 {font-family: 微軟正黑體;}
+        h4 {text-indent: 3% ; font-family: 微軟正黑體;}
+        p {font-weight: bold; font: 18px; text-indent: 3%;; font-family: 微軟正黑體;}
+
+
+        .site-footer
+{
+  background-color:#afabab;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#ffffff;
+}
+.site-footer hr
+{
+  border-top-color:rgb(255, 255, 255);
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#ffffff;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#ffffff
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+    </style>
+</head>
+<body bgcolor="black" text="white">
+    <!-- Header -->
+  <h1>Introduction of films</h1>
+  <nav id="primary_nav_wrap">
+    <ul>
+      <li><a href="#">SORT</a>
+        <ul>
+          <li><a href="./sort/Final report/epic film.html">EPIC</a></li>
+          <li><a href="./sort/Final report/romance.html">ROMANCE</a></li>
+          <li><a href="./sort/Final report/science fiction.html">SCIENCE</a></li>
+          <li><a href="./sort/Final report/comedy.html">COMEDY</a></li>
+          <li><a href="./sort/Final report/animation.html">ANIMATION</a></li>
+        </ul>
+      </li>
+      <li><a href="./index.html">HOME</a></li>
+      <li><a href="./link/link.html">LINK</a></li>
+    </ul>
+  </nav>
+
+    <tr>Recommendation</tr>
+    <select onchange="location.href=this.options[this.selectedIndex].value">
+        <option>Select category</option> 
+        <option value="http://127.0.0.1:5500/epic%20film.html">Epic film</option>
+        <option value="http://127.0.0.1:5500/romance.html">Romance</option>
+        <option value="http://127.0.0.1:5500/science%20fiction.html">Science fiction</option>
+        <option value="http://127.0.0.1:5500/animation.html">Animation</option>
+        <option value="http://127.0.0.1:5500/comedy.html">Comedy</option>
+    </select>
+    <ul style="list-style-type: disc;">
+        <li><a href="#Game of Thrones" style="color:white;">Game of Thrones</a></li>
+        <li><a href="#Money Heist" style="color:white;">Money Heist</a></li>
+        <li><a href="#The White Queen" style="color:white;">The White Queen</a></li>
+        <li><a href="#13 Reasons Why" style="color:white;">13 Reasons Why</a></li>
+        <li><a href="#The Last Kingdom" style="color:white;">The Last Kingdom</a></li>
+    </ul>
+
+<!--權力遊戲-->
+<article>
+    <hgroup>
+    <h1 id="Game of Thrones">Game of Thrones</h1>
+    <h3>Star</h3>
+        <ul style="list-style-type: circle;">
+            <li>Peter Hayden Dinklage</li>
+            <li>Nikolaj Coster-Waldau</li>
+            <li>Lena Headey</li>
+        </ul>
+    </hgroup>
+    <section>
+        <h3>Synopsis</h3>  
+            <p>Set on the fictional continents of Westeros and Essos, Game of Thrones has a large ensemble cast and follows several story arcs throughout the course of the show.The first major arc concerns the Iron Throne of the Seven Kingdoms of Westeros through a web of political conflicts among the noble families either vying to claim the throne or fighting for independence from whoever sits on it.A second focuses on the last descendant of the realm's deposed ruling dynasty, who has been exiled to Essos and is plotting to return and reclaim the throne.The third follows the Night's Watch, a military order defending the realm against threats from beyond Westeros's northern border.</p>
+        </section>
+        <section>
+            <h3>Trailer</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KPLWWIOCOOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+</article>
+
+<!--紙房子-->
+<article>
+    <hgroup>
+    <h1 id="Money Heist">Money Heist</h1>
+    <h3>Star</h3>
+        <ul style="list-style-type: circle;">
+            <li>Úrsula Corberó</li>
+            <li>Álvaro Morte</li>
+            <li>Itziar Ituño</li>
+        </ul> 
+    </hgroup>
+    <section>       
+        <h3>Synopsis</h3>
+            <p>Set in Madrid, a mysterious man known as the "Professor" recruits a group of eight people, who choose city names as their aliases, to carry out an ambitious plan that involves entering the Royal Mint of Spain, and escaping with €984 million.After taking 67 people hostage inside the Mint, the team plans to remain inside for 11 days to print the money as they deal with elite police forces.In the events following the initial heist, the group's members are forced out of hiding and prepare for a second heist, this time on the Bank of Spain, as they again deal with hostages and police forces.</p>
+        </section>
+        <section>
+            <h3>Trailer</h3>       
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/G2dlvaUigeI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+</article>
+
+<!--白皇后-->
+<article>
+    <hgroup>
+    <h1 id="The White Queen">The White Queen</h1>
+    <h3>Star</h3>
+        <ul style="list-style-type: circle;">
+            <li>Aneurin Barnard</li>
+            <li>Rebecca Ferguson</li>
+            <li>Max Irons</li>
+        </ul>
+    </hgroup>
+    <section>
+        <h3>Synopsis</h3>
+            <p>Adapted for the BBC TV station, a ten-episode miniseries composed of Philip Gregory’s historical novel The Cousins’s War series-"The White Queen", "The Red Queen" and "Earl's Daughter".The background of the story is surrounded by the famous British "War of the Roses", the "Lancaster family" and the "York family" are fighting for the throne.The story begins in 1464 when the war has been on for 9 years. It tells the story of three women in pursuit of fame and wealth. Stories of intrigue and manipulation of history.</p>
+        </section>
+        <section>
+            <h3>Trailer</h3>        
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ydneyl2S30o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+</article>
+
+<!--漢娜的遺言-->
+<article>
+    <hgroup>
+    <h1 id="13 Reasons Why">13 Reasons Why</h1>
+    <h3>Star</h3>
+        <ul style="list-style-type: circle;">
+            <li>Dylan Christopher Minnette</li>
+            <li>Katherine Langford</li>
+            <li>Christian Lee Navarro</li>
+        </ul>
+    </hgroup>
+    <section>            
+        <h3>Synopsis</h3>
+            <p>After a teenager Hannah Baker committed suicide by slashing her wrists, she shocked her relatives and friends. After a while, Hannah’s friend Klay Jensen received a series of tapes recorded before her death. The recordings were made by her. Exposing the thirteen reasons why you chose to go to a dead end and creating this tragedy, and the dark secrets behind it will gradually be exposed to the sun...</p>
+        </section>
+        <section>
+            <h3>Trailer</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3yKaCnYe5zs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+</article>
+
+<!--最後的王國--> 
+<article>
+    <hgroup>   
+    <h1 id="The Last Kingdom">The Last Kingdom</h1>
+    <h3>Star</h3>
+        <ul style="list-style-type: circle;">
+            <li>Alexander Dreymon</li>
+            <li>Emily Cox</li>
+            <li>Amy Wren</li>
+        </ul> 
+    </hgroup>
+    <section>           
+        <h3>Synopsis</h3>
+            <p>When Emperor Evered sent troops to fight the Scandinavian invaders, Utreid, a Saxon who was raised by the Vikings, tried to obtain hereditary inheritance.</p>
+        </section>
+        <section>
+            <h3>Trailer</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/WxPApTGWwas" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+</article>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-3">
+          <h6>About</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/about/">About Us</a></li>
+            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    &copy copyright 2021 
+  </footer> 
+</body>
+</html>
