@@ -15,17 +15,14 @@
   }
 
 .container {
-  width: 980px;
-  margin: auto;
+  margin:auto;
   }
 
 #primary_nav_wrap
 {
 	margin-top:15px;
   text-align: center;
-  width: 150px;
   height: 100%;
-  padding: 0 0 0 300px;
   vertical-align: center;
   display: flex;
   font-size: 1.2rem;
@@ -35,7 +32,7 @@
 {
   width: 150px;
   height: 100%;
-  padding: 0 0 0 200px;
+  
   vertical-align: center;
 }
 
@@ -43,8 +40,8 @@
 {
 	list-style:none;
 	position:relative;
-	float:left;
-	margin:0;
+	float:right;
+	margin:40px 0 0 0;
 	padding:0;
 }
 
@@ -170,10 +167,12 @@
     .site-footer
 {
   background-color:#afabab;
-  padding:45px 0 20px;
+  padding:45px 200px;
   font-size:15px;
+  vertical-align: auto;
   line-height:24px;
   color:#ffffff;
+  position: relative;
 }
 .site-footer hr
 {
@@ -182,16 +181,9 @@
 }
 .site-footer hr.small
 {
-  margin:20px 0
+  margin:20px 0;
 }
-.site-footer h6
-{
-  color:#fff;
-  font-size:16px;
-  text-transform:uppercase;
-  margin-top:5px;
-  letter-spacing:2px
-}
+
 .site-footer a
 {
   color:#ffffff;
@@ -203,12 +195,16 @@
 }
 .footer-links
 {
-  padding-left:0;
-  list-style:none
+  margin: 0;
+  list-style:none;
+  display:flex;
+  justify-content: space-around;
 }
 .footer-links li
 {
-  display:block
+  display: inline-flex;
+  margin-right:30px;
+  text-align: center;
 }
 .footer-links a
 {
@@ -237,10 +233,14 @@
   border-radius:100%;
   background-color:#33353d
 }
-.copyright-text
-{
-  margin:0
+.copy
+{ 
+  position: absolute;
+  bottom: 10px;
+  right:10px;
+
 }
+
 @media (max-width:991px)
 {
   .site-footer [class^=col-]
@@ -273,11 +273,11 @@
 
 <body>
     <!-- Header -->
-  <nav id="primary_nav_wrap">
-    <div class="container">
-      <img src="./img/logo.png" alt="logo">
-  </div>
-    <ul>
+    
+  <nav id="primary_nav_wrap"><div class="container">
+    <img src="./img/logo.png" alt="logo">
+  
+    <ul >
       <li><a href="#">SORT</a>
         <ul>
           <li><a href="./sort/Final report/epic film.html">EPIC</a></li>
@@ -361,7 +361,6 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-6 col-md-3">
-          <h6>About</h6>
           <ul class="footer-links">
             <li><a href="#">About Us</a></li>
             <li><a href="#">Contact Us</a></li>
@@ -371,10 +370,10 @@
           </ul>
         </div>
       </div>
-      <hr>
     </div>
-    &copy copyright 2021 
+    <div class="copy">&copy copyright 2021 </div>
 </footer>
+
 </body>
 
 </html>
