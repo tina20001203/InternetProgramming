@@ -6,25 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animation</title>
     <style>
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+.container {
+  margin:auto;
+  }
+
 #primary_nav_wrap
 {
 	margin-top:15px;
   text-align: center;
+  height: 100%;
+  vertical-align: center;
+  display: flex;
+  font-size: 1.2rem;
+}
+
+#primary_nav_wrap img
+{
+  width: 150px;
+  height: 100%;
+  
+  vertical-align: center;
 }
 
 #primary_nav_wrap ul
 {
 	list-style:none;
 	position:relative;
-	float:left;
-	margin:0;
+	float:right;
+	margin:40px 0 0 0;
 	padding:0;
 }
 
 #primary_nav_wrap ul a
 {
-	display:block;
-	color:rgb(255, 255, 255);
+	display:inline;
+	color:rgb(110, 110, 110);
 	text-decoration:none;
   margin: 0 auto;
 	font-weight:700;
@@ -39,17 +61,18 @@
 	position:relative;
 	float:left;
 	margin:0;
-	padding:0
+	padding:0;
+  display: inline;
 }
 
 #primary_nav_wrap ul li.current-menu-item
 {
-	background:rgb(90, 90, 90)
+	background:rgb(161, 161, 161)
 }
 
 #primary_nav_wrap ul li:hover
 {
-	background:#888888
+	background:#a0a0a0
 }
 
 #primary_nav_wrap ul ul
@@ -58,7 +81,7 @@
 	position:absolute;
 	top:100%;
 	left:0;
-	background:rgb(0, 0, 0);
+	background:rgb(85, 85, 85);
 	padding:0
 }
 
@@ -76,7 +99,7 @@
 
 #primary_nav_wrap ul li:hover > ul
 {
-	display:block
+	display:inline;
 }
 
         h1 {font-family: 微軟正黑體;}
@@ -88,10 +111,12 @@
         .site-footer
 {
   background-color:#afabab;
-  padding:45px 0 20px;
+  padding:45px 200px;
   font-size:15px;
+  vertical-align: auto;
   line-height:24px;
   color:#ffffff;
+  position: relative;
 }
 .site-footer hr
 {
@@ -100,16 +125,9 @@
 }
 .site-footer hr.small
 {
-  margin:20px 0
+  margin:20px 0;
 }
-.site-footer h6
-{
-  color:#fff;
-  font-size:16px;
-  text-transform:uppercase;
-  margin-top:5px;
-  letter-spacing:2px
-}
+
 .site-footer a
 {
   color:#ffffff;
@@ -121,12 +139,16 @@
 }
 .footer-links
 {
-  padding-left:0;
-  list-style:none
+  margin: 0;
+  list-style:none;
+  display:flex;
+  justify-content: space-around;
 }
 .footer-links li
 {
-  display:block
+  display: inline-flex;
+  margin-right:30px;
+  text-align: center;
 }
 .footer-links a
 {
@@ -155,9 +177,31 @@
   border-radius:100%;
   background-color:#33353d
 }
-.copyright-text
+.copy
+{ 
+  position: absolute;
+  bottom: 10px;
+  right:10px;
+
+}
+
+@media (max-width:991px)
 {
-  margin:0
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
 }
 @media (max-width:991px)
 {
@@ -191,22 +235,23 @@
 </head>
 <body bgcolor="black" text="white">
     <!-- Header -->
-  <h1>Introduction of films</h1>
-  <nav id="primary_nav_wrap">
-    <ul>
-      <li><a href="#">SORT</a>
-        <ul>
-          <li><a href="./sort/Final report/epic film.html">EPIC</a></li>
-          <li><a href="./sort/Final report/romance.html">ROMANCE</a></li>
-          <li><a href="./sort/Final report/science fiction.html">SCIENCE</a></li>
-          <li><a href="./sort/Final report/comedy.html">COMEDY</a></li>
-          <li><a href="./sort/Final report/animation.html">ANIMATION</a></li>
-        </ul>
-      </li>
-      <li><a href="./index.html">HOME</a></li>
-      <li><a href="./link/link.html">LINK</a></li>
-    </ul>
-  </nav>
+    <nav id="primary_nav_wrap"><div class="container">
+      <img src="./img/logo.png" alt="logo">
+    
+      <ul >
+        <li><a href="#">SORT</a>
+          <ul>
+            <li><a href="./sort/Final report/epic film.html">EPIC</a></li>
+            <li><a href="./sort/Final report/romance.html">ROMANCE</a></li>
+            <li><a href="./sort/Final report/science fiction.html">SCIENCE</a></li>
+            <li><a href="./sort/Final report/comedy.html">COMEDY</a></li>
+            <li><a href="./sort/Final report/animation.html">ANIMATION</a></li>
+          </ul>
+        </li>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./link/link.html">LINK</a></li>
+      </ul>
+    </nav>
   
     <tr>Recommendation</tr>
     <select onchange="location.href=this.options[this.selectedIndex].value">
@@ -330,23 +375,21 @@
 </article>
 
 <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-6 col-md-3">
-          <h6>About</h6>
-          <ul class="footer-links">
-            <li><a href="http://scanfcode.com/about/">About Us</a></li>
-            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
-          </ul>
-        </div>
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-md-3">
+        <ul class="footer-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Contribute</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
       </div>
-      <hr>
     </div>
-    &copy copyright 2021 
+  </div>
+  <div class="copy">&copy copyright 2021 </div>
 </footer>
             </body>
 </html>
