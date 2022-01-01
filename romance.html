@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romance</title>
+    <style>
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+.container {
+  margin:auto;
+  }
+
+#primary_nav_wrap
+{
+	margin-top:15px;
+  text-align: center;
+  height: 100%;
+  vertical-align: center;
+  display: flex;
+  font-size: 1.2rem;
+}
+
+#primary_nav_wrap img
+{
+  width: 150px;
+  height: 100%;
+  
+  vertical-align: center;
+}
+
+#primary_nav_wrap ul
+{
+	list-style:none;
+	position:relative;
+	float:right;
+	margin:0;
+	padding:38px 0 0 0;
+}
+
+#primary_nav_wrap ul a
+{
+	display:inline;
+	color:rgb(110, 110, 110);
+	text-decoration:none;
+  margin: 0 auto;
+	font-weight:700;
+	font-size:12px;
+	line-height:32px;
+	padding:0 15px;
+	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+  display: inline;
+}
+
+#primary_nav_wrap ul li.current-menu-item
+{
+	background:rgb(255, 255, 255)
+}
+
+#primary_nav_wrap ul li:hover
+{
+	background:#d8d7d7
+}
+
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:rgb(0, 0, 0);
+	padding:0
+}
+
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:200px
+}
+
+#primary_nav_wrap ul ul a
+{
+	line-height:120%;
+	padding:10px 15px
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+	display:inline;
+}
+        h1 {font-family: 微軟正黑體;}
+        h2 {font-family: 微軟正黑體;}
+        h4 {text-indent: 3% ; font-family: 微軟正黑體;}
+        p {font-weight: bold; font: 18px; text-indent: 3%;; font-family: 微軟正黑體;}
+
+
+        .site-footer
+{
+  background-color:#afabab;
+  padding:45px 200px;
+  font-size:15px;
+  vertical-align: auto;
+  line-height:24px;
+  color:#ffffff;
+  position: relative;
+}
+.site-footer hr
+{
+  border-top-color:rgb(255, 255, 255);
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0;
+}
+
+.site-footer a
+{
+  color:#ffffff;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  margin: 0;
+  list-style:none;
+  display:flex;
+  justify-content: space-around;
+}
+.footer-links li
+{
+  display: inline-flex;
+  margin-right:30px;
+  text-align: center;
+}
+.footer-links a
+{
+  color:#ffffff
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copy
+{ 
+  position: absolute;
+  bottom: 10px;
+  right:10px;
+
+}
+
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+    </style>
+</head>
+<body bgcolor="black" text="white">
+    <!-- Header --> 
+    <nav id="primary_nav_wrap"><div class="container">
+      <img src="./img/logo.png" alt="logo">
+    
+      <ul >
+        <li><a href="#">SORT</a>
+          <ul>
+            <li><a href="./epic film.html">EPIC</a></li>
+            <li><a href="./romance.html">ROMANCE</a></li>
+            <li><a href="./science fiction.html">SCIENCE</a></li>
+            <li><a href="./comedy.html">COMEDY</a></li>
+            <li><a href="./animation.html">ANIMATION</a></li>
+          </ul>
+        </li>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./link/link.html">LINK</a></li>
+      </ul>
+    </nav>
+
+    <tr>Recommendation</tr>
+    <select onchange="location.href=this.options[this.selectedIndex].value">
+        <option>Select category</option>
+        <option value="http://127.0.0.1:5500/epic%20film.html">Epic film</option>
+        <option value="http://127.0.0.1:5500/romance.html">Romance</option>
+        <option value="http://127.0.0.1:5500/science%20fiction.html">Science fiction</option>
+        <option value="http://127.0.0.1:5500/animation.html">Animation</option>
+        <option value="http://127.0.0.1:5500/comedy.html">Comedy</option>
+    </select>
+    <ul style="list-style-type: disc;">
+        <li><a href="#Emily in Paris" style="color:white;">Emily in Paris</a></li>
+        <li><a href="#Love Alarm" style="color:white;">Love Alarm</a></li>
+        <li><a href="#Bridgerton" style="color:white;">Bridgerton</a></li>
+        <li><a href="#Hi Bye, Mama!" style="color:white;">Hi Bye, Mama!</a></li>
+        <li><a href="#Soundtrack" style="color:white;">Soundtrack</a></li>
+    </ul>
+
+    <!--Emily in Paris-->
+    <article>
+        <hgroup>
+            <h1 id="Emily in Paris">Emily in Paris</h1>
+            <h3>Star</h3>
+            <ul style="list-style-type: circle;">
+                <li>Lily Collins</li>
+                <li>Philippani Leroy-Poliu</li>
+                <li>Ashlee Park</li>
+            </ul>
+        </hgroup>
+        <section>
+            <h3>Synopsis</h3>
+            <p>Emily, a driven 20-something American from Chicago who moves to Paris for an unexpected job opportunity. She is tasked with bringing an American point of view to a venerable French marketing firm. Cultures clash as she adjusts to the challenges of life in Paris while juggling her career, new friendships, and love life.</p>
+        </section>
+        <section>
+            <h3>Trailer</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/20Hk3UK2H7Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+    </article>
+
+    <!--Love Alarm-->
+    <article>
+        <hgroup>
+            <h1 id="Love Alarm">Love Alarm</h1>
+            <h3>Star</h3>
+            <ul style="list-style-type: circle;">
+                <li>Kim So Hyun</li>
+                <li>Song Kang</li>
+                <li>Jung Ga-Ram</li>
+            </ul>
+        </hgroup>
+        <section>
+            <h3>Synopsis</h3>
+            <p>Revolves around the story of a technology that enables users to discover love through an application which notifies users when someone within 10 meters has romantic feelings for them.</p>
+        </section>
+        <section>
+            <h3>Trailer</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9sKbVzc8yic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+    </article>
+
+    <!--Bridgerton-->
+    <article>
+        <hgroup>
+            <h1 id="Bridgerton">Bridgerton</h1>
+            <h3>Star</h3>
+            <ul style="list-style-type: circle;">
+                <li>Adraai Ando</li>
+                <li>Jonathan Bailey</li>
+                <li>Phoebe Denneffe</li>
+            </ul>
+        </hgroup>
+        <section>
+            <h3>Synopsis</h3>
+            <p>It tells the story of the family's eldest daughter Daphne Bridgeton entering the London Regency for the first time in the fiercely competitive marriage market. Daphne hopes to follow in the footsteps of her parents and find true love. Her vision seemed unparalleled at first. However, when Daphne's younger brother began to reject her potential suitors, the mysterious Ms. Wheatstone wrote an article about a scandal in high society, slandering Daphne. Let's take a look at the aspiring and rebellious Duke of Hastings, a loyal bachelor, the darling of new mothers. Although they claim that they don't want anything provided by the other party, their attractiveness is undeniable. When they want to get rid of social expectations, they are caught in more and more disputes of wisdom and sparks.</p>
+        </section>
+        <section>
+            <h3>Trailer</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8E25aOI0ag8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+    </article>
+
+    <!--Hi Bye, Mama!-->
+    <article>
+        <hgroup>
+            <h1 id="Hi Bye, Mama!">Hi Bye, Mama!</h1>
+            <h3>Star</h3>
+            <ul style="list-style-type: circle;">
+                <li>Kim Tae Hee</li>
+                <li>Lee Kyu-Hyung</li>
+                <li>Ko Bo Gyeol</li>
+            </ul>
+        </hgroup>
+        <section>
+            <h3>Synopsis</h3>
+            <p>With the mother who died in an accident for 5 years, the husband who worked hard to start a new life after the loss of his wife, and the children of the two as the protagonists, the plot describes the story of the ghost mother who participated in the 49-day "reincarnation plan" in order to reincarnate as an adult.</p>
+        </section>
+        <section>
+            <h3>Trailer</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EnH3SOVZKfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+    </article>
+
+    <!--Soundtrack-->
+    <article>
+        <hgroup>
+            <h1 id="Soundtrack">Soundtrack</h1>
+            <h3>Star</h3>
+            <ul style="list-style-type: circle;">
+                <li>Paul James</li>
+                <li>Callie Hernandez</li>
+                <li>Marianne Jean-Baptiste</li>
+            </ul>
+        </hgroup>
+        <section>
+            <h3>Synopsis</h3>
+            <p>This musical feature film describes two distressed artists living in Los Angeles, a life full of ups and downs that intertwine love and loss.</p>
+        </section>
+        <section>
+            <h3>Trailer</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9bRqe7eBqmw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+    </article>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-md-3">
+        <ul class="footer-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Contribute</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="copy">&copy copyright 2021 </div>
+</footer>
+</body>
+</html>

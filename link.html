@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link</title>
+</head>
+<style>
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+.container {
+  margin:auto;
+  }
+
+#primary_nav_wrap
+{
+	margin-top:15px;
+  text-align: center;
+  height: 100%;
+  vertical-align: center;
+  display: flex;
+  font-size: 1.2rem;
+}
+
+#primary_nav_wrap img
+{
+  width: 150px;
+  height: 100%;
+  
+  vertical-align: center;
+}
+
+#primary_nav_wrap ul
+{
+	list-style:none;
+	position:relative;
+	float:right;
+	margin:0;
+	padding:38px 0 0 0;
+}
+
+#primary_nav_wrap ul a
+{
+	display:inline;
+	color:rgb(110, 110, 110);
+	text-decoration:none;
+  margin: 0 auto;
+	font-weight:700;
+	font-size:12px;
+	line-height:32px;
+	padding:0 15px;
+	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+  display: inline;
+}
+
+#primary_nav_wrap ul li.current-menu-item
+{
+	background:rgb(255, 255, 255)
+}
+
+#primary_nav_wrap ul li:hover
+{
+	background:#d8d7d7
+}
+
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:rgb(0, 0, 0);
+	padding:0
+}
+
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:200px
+}
+
+#primary_nav_wrap ul ul a
+{
+	line-height:120%;
+	padding:10px 15px
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+	display:inline;
+}
+
+  .contain {
+        width: 980px;
+        margin: 30px;
+        margin: 0 auto;
+        width: 600px;
+    }
+
+  .contain .link{
+    display: flex;
+  }
+
+  .contain .image{
+    margin: 50px 0;
+    padding: 0 100px 0 220px;
+  }
+
+  .contain .image img{
+    width: 90px;
+    height: 95px;
+  }
+
+  .contain .href {
+    padding: auto;
+  }
+
+  .contain a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 40px;
+    width: 550px;
+  }
+
+  .site-footer
+{
+  background-color:#afabab;
+  padding:45px 200px;
+  font-size:15px;
+  vertical-align: auto;
+  line-height:24px;
+  color:#ffffff;
+  position: relative;
+}
+.site-footer hr
+{
+  border-top-color:rgb(255, 255, 255);
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0;
+}
+
+.site-footer a
+{
+  color:#ffffff;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  margin: 0;
+  list-style:none;
+  display:flex;
+  justify-content: space-around;
+}
+.footer-links li
+{
+  display: inline-flex;
+  margin-right:30px;
+  text-align: center;
+}
+.footer-links a
+{
+  color:#ffffff
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copy
+{ 
+  position: absolute;
+  bottom: 10px;
+  right:10px;
+
+}
+
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+</style>
+<body>
+    <!-- Header -->    
+    <nav id="primary_nav_wrap"><div class="container">
+      <img src="./img/logo.png" alt="logo">
+    
+      <ul >
+        <li><a href="#">SORT</a>
+          <ul>
+            <li><a href="./epic film.html">EPIC</a></li>
+            <li><a href="./romance.html">ROMANCE</a></li>
+            <li><a href="./science fiction.html">SCIENCE</a></li>
+            <li><a href="./comedy.html">COMEDY</a></li>
+            <li><a href="./animation.html">ANIMATION</a></li>
+          </ul>
+        </li>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./link/link.html">LINK</a></li>
+      </ul>
+    </nav>
+
+    <div class="contain">
+        <div class="link">
+          <div class="image">
+            <img src="./img/netflix.jpg" style="border-radius: 50%;  width: 150px;height: 150px " alt="">
+          </div>
+            <div class="href">
+              <a href="https://www.netflix.com/">Netfix</a>
+            </div>
+        </div>
+
+        <div class="link">
+          <div class="img">
+            <img src="./img/iqiyi.jpg" style="border-radius: 50%; width: 150px;height: 150px" alt="">
+          </div>
+            <div class="href">
+              <a href="https://www.iq.com/">IQIYI</a>
+            </div>
+        </div>
+
+        <div class="link">
+          <div class="img">
+            <img src="./img/linetv.jpg" style="border-radius: 50%; width: 150px;height: 150px" alt="">
+          </div>
+            <div class="href">
+              <a href="https://www.linetv.tw/">LINETV</a>
+            </div>
+        </div>
+
+        <div class="link">
+          <div class="img">
+            <img src="./img/disney+.jpg" style="border-radius: 50%; width: 150px;height: 150px" alt="">
+          </div>
+            <div class="href">
+              <a href="https://www.disneyplus.com/">DISNEY+</a>
+            </div>
+        </div>
+
+        <div class="link">
+          <div class="img">
+            <img src="./img/catchplay.jpg" style="border-radius: 50%; width: 150px;height: 150px" alt="">
+          </div>
+            <div class="href">
+              <a href="https://www.catchplay.com/tw">CATCHPLAY</a>
+            </div>
+        </div>
+
+        <div class="link">
+          <div class="img">
+            <img src="./img/friday.jpg" style="border-radius: 50%; width: 150px;height: 150px" alt="">
+          </div>
+            <div class="href">
+              <a href="https://video.friday.tw/">FRIDAY</a>
+            </div>
+        </div>
+    </div>
+    
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-md-3">
+        <ul class="footer-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Contribute</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="copy">&copy copyright 2021 </div>
+</footer>
+</body>
+</html>

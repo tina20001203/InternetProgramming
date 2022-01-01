@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+.container {
+  margin:auto;
+  }
+
+#primary_nav_wrap
+{
+	margin-top:15px;
+  text-align: center;
+  height: 100%;
+  vertical-align: center;
+  display: flex;
+  font-size: 1.2rem;
+}
+
+#primary_nav_wrap img
+{
+  width: 150px;
+  height: 100%;
+  
+  vertical-align: center;
+}
+
+#primary_nav_wrap ul
+{
+	list-style:none;
+	position:relative;
+	float:right;
+	margin:0;
+	padding:38px 0 0 0;
+}
+
+#primary_nav_wrap ul a
+{
+	display:inline;
+	color:rgb(110, 110, 110);
+	text-decoration:none;
+  margin: 0 auto;
+	font-weight:700;
+	font-size:12px;
+	line-height:32px;
+	padding:0 15px;
+	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+  display: inline;
+}
+
+#primary_nav_wrap ul li.current-menu-item
+{
+	background:rgb(255, 255, 255)
+}
+
+#primary_nav_wrap ul li:hover
+{
+	background:#d8d7d7
+}
+
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:rgb(0, 0, 0);
+	padding:0
+}
+
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:200px
+}
+
+#primary_nav_wrap ul ul a
+{
+	line-height:120%;
+	padding:10px 15px
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+	display:inline;
+}
+
+        h1 {font-family: 微軟正黑體;}
+        h2 {font-family: 微軟正黑體;}
+        h4 {text-indent: 3% ; font-family: 微軟正黑體;}
+        p {font-weight: bold; font: 18px; text-indent: 3%;; font-family: 微軟正黑體;}
+
+
+        .site-footer
+{
+  background-color:#afabab;
+  padding:45px 200px;
+  font-size:15px;
+  vertical-align: auto;
+  line-height:24px;
+  color:#ffffff;
+  position: relative;
+}
+.site-footer hr
+{
+  border-top-color:rgb(255, 255, 255);
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0;
+}
+
+.site-footer a
+{
+  color:#ffffff;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  margin: 0;
+  list-style:none;
+  display:flex;
+  justify-content: space-around;
+}
+.footer-links li
+{
+  display: inline-flex;
+  margin-right:30px;
+  text-align: center;
+}
+.footer-links a
+{
+  color:#ffffff
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copy
+{ 
+  position: absolute;
+  bottom: 10px;
+  right:10px;
+
+}
+
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+    </style>
+</head>
+<body bgcolor="black" text="white">
+    <!-- Header -->
+    <nav id="primary_nav_wrap"><div class="container">
+      <img src="./img/logo.png" alt="logo">
+    
+      <ul >
+        <li><a href="#">SORT</a>
+          <ul>
+            <li><a href="./epic film.html">EPIC</a></li>
+            <li><a href="./romance.html">ROMANCE</a></li>
+            <li><a href="./science fiction.html">SCIENCE</a></li>
+            <li><a href="./comedy.html">COMEDY</a></li>
+            <li><a href="./animation.html">ANIMATION</a></li>
+          </ul>
+        </li>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./link/link.html">LINK</a></li>
+      </ul>
+    </nav>
+  
+    <tr>Recommendation</tr>
+    <select onchange="location.href=this.options[this.selectedIndex].value">
+        <option>Select category</option>
+        <option value="http://127.0.0.1:5500/epic%20film.html">Epic film</option>
+        <option value="http://127.0.0.1:5500/romance.html">Romance</option>
+        <option value="http://127.0.0.1:5500/science%20fiction.html">Science fiction</option>
+        <option value="http://127.0.0.1:5500/animation.html">Animation</option>
+        <option value="http://127.0.0.1:5500/comedy.html">Comedy</option>
+    </select>
+    <ul style="list-style-type: disc;">
+        <li><a href="#Demon Slayer" style="color:white;">Demon Slayer</a></li>
+        <li><a href="#That Time I Got Reincarnated as a Slime" style="color:white;">That Time I Got Reincarnated as a Slime</a></li>
+        <li><a href="#Jujutsu Kaisen" style="color:white;">Jujutsu Kaisen</a></li>
+        <li><a href="#Attacking Giant" style="color:white;">Attacking Giant</a></li>
+        <li><a href="#Anohana: The Flower We Saw That Day" style="color:white;">Anohana: The Flower We Saw That Day</a></li>
+        </ul>
+
+<!--鬼滅之刃-->
+<article>
+    <hgroup>
+        <h1 id="Demon Slayer">Demon Slayer</h1>
+        <h3>Star</h3>
+            <ul style="list-style-type: circle;">
+                <li>花江夏樹</li>
+                <li>下野紘</li>
+                <li>松岡禎丞</li>
+            </ul>
+    </hgroup>
+    <section>
+        <h3>Synopsis</h3>
+        <p>Describes that the protagonist Tanjirou embarks on a journey of killing ghosts in order to find a way to turn his sister who was turned into a ghost into a human.</p>
+    </section>    
+    <section>
+        <h3>Trailer</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8OlFNm3g5bU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>     
+
+<!--關於我轉生變成史萊姆這檔事-->
+<article>
+    <hgroup>           
+        <h1 id="That Time I Got Reincarnated as a Slime">That Time I Got Reincarnated as a Slime</h1>
+        <h3>Star</h3>
+            <ul style="list-style-type: circle;">
+                <li>岡咲美保</li>
+                <li>前野智昭</li>
+                <li>花守由美里</li>
+            </ul>     
+        </hgroup>
+        <section>   
+                <h3>Synopsis</h3>
+                <p>An ordinary 37-year-old office worker, Mikami Satoru, was killed by a random murderer and reincarnated in another world to become a slime. In this new life accompanied by swords and magic , he will set off a huge storm sweeping the entire other world.</p>
+        </section>
+        <section>
+            <h3>Trailer</h3>        
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KKG3qub_Dyc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+</article>
+
+<!--咒術迴戰-->
+<article>
+    <hgroup>
+        <h1 id="Jujutsu Kaisen">Jujutsu Kaisen</h1>
+        <h3>Star</h3>
+            <ul style="list-style-type: circle;">
+                <li>榎木淳彌</li>
+                <li>內田雄馬</li>
+                <li>中村悠一</li>
+            </ul>
+        </hgroup>
+        <section>
+         <h3>Synopsis</h3>
+                <p>Taking modern Japan as the stage of the story, the basic setting is that when people have negative emotions such as bitterness, regret, and shame, they will form "magic spirits" that endanger mankind, resulting in more than 10,000 "unknown deaths" or "deaths" in Japan every year. "Missing", only the conjurer can fight with the curse spirit and exterminate the curse spirit. Tokyo and Kyoto each set up a "Conjurer College", which is responsible for training potential people to become conjurers. Each conjurer can develop different fighting skills through blood inheritance, experience or training.</p>
+        </section>
+        <section>       
+            <h3>Trailer</h3>        
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZlDlKeV8LjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+    </article>
+
+<!--進擊的巨人-->
+<article>
+    <hgroup>
+        <h1 id="Attacking Giant">Attacking Giant</h1>
+         <h3>Star</h3>
+            <ul style="list-style-type: circle;">
+                <li>梶裕貴</li>
+                <li>石川由依</li>
+                <li>井上麻里奈</li>
+            </ul>            
+        </hgroup>
+        <section>
+        <h3>Synopsis</h3>
+                <p>The story describes how huge giants suddenly appeared on the island more than 100 years ago. These giants are as tall as 3 meters and instinctively swallow humans. They can move as long as they have sunlight. They have hard skin and strong regenerative ability. They are just ordinary. His knives and sharp weapons can't stop them from moving, and only by attacking their "back of the neck" can they have a chance to stop. However, most of the human beings were not as powerful as giants and were killed. In the end, the survivors hid in the "wall", avoiding the unrelenting and unrelenting killing.</p>
+            </section>
+            <section> 
+                <h3>Trailer</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KKzmOh4SuBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+</article>
+
+<!--未聞花名-->
+<article>
+    <hgroup>
+        <h1 id="Anohana: The Flower We Saw That Day">Anohana: The Flower We Saw That Day</h1>
+        <h3>Star</h3>
+            <ul style="list-style-type: circle;">
+                <li>入野自由</li>
+                <li>茅野愛衣</li>
+                <li>戶松遙</li>
+            </ul> 
+        </hgroup>
+        <section>           
+        <h3>Synopsis</h3>
+                <p>It tells the story of the "Super Peace Busters" formed by six childhood sweethearts. Ya Ya died in an accident. The other five people left their own knots on Ya Ya's death. "Ultra Peace Busters" also disbanded... One summer, the dead Ya Ya suddenly appeared in front of Renta in the form of a ghost, and said There is a desire to be fulfilled. As the story progresses, not only Renta's heart is worried about the death of Yaya, but the different emotions that have been buried in the hearts of other members burst out one by one.</p>
+            </section>
+            <section>
+                <h3>Trailer</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/8c7qL8o9BYo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+</article>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-md-3">
+        <ul class="footer-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Contribute</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="copy">&copy copyright 2021 </div>
+</footer>
+            </body>
+</html>
