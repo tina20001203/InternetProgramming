@@ -102,14 +102,32 @@
 	display:inline;
 }
 
-        h1 {font-family: 微軟正黑體;}
-        h2 {font-family: 微軟正黑體;}
-        h4 {text-indent: 3% ; font-family: 微軟正黑體;}
-        p {font-weight: bold; font: 18px; text-indent: 3%;; font-family: 微軟正黑體;}
+  h1 {
+  font-family: 微軟正黑體;
+  padding-top: 23px;
+  color: #e66565;
+  font: 26px;
+  }
+
+  h3 {
+  font-family: 微軟正黑體;
+  padding: 23px 0;
+  }
+
+  .article li{
+  padding: 15px 0;
+  }    
+
+  p {
+  font-weight: bold; 
+  font: 12px; 
+  text-indent: 3%; 
+  font-family: 微軟正黑體;
+  padding: 5px 0;
+  }
 
 
-        .site-footer
-{
+  .site-footer {
   background-color:#afabab;
   padding:45px 200px;
   font-size:15px;
@@ -118,11 +136,13 @@
   color:#ffffff;
   position: relative;
 }
+
 .site-footer hr
 {
   border-top-color:rgb(255, 255, 255);
   opacity:0.5
 }
+
 .site-footer hr.small
 {
   margin:20px 0;
@@ -132,11 +152,13 @@
 {
   color:#ffffff;
 }
+
 .site-footer a:hover
 {
   color:#3366cc;
   text-decoration:none;
 }
+
 .footer-links
 {
   margin: 0;
@@ -144,29 +166,35 @@
   display:flex;
   justify-content: space-around;
 }
+
 .footer-links li
 {
   display: inline-flex;
   margin-right:30px;
   text-align: center;
 }
+
 .footer-links a
 {
   color:#ffffff
 }
+
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
   color:#3366cc;
   text-decoration:none;
 }
+
 .footer-links.inline li
 {
   display:inline-block
 }
+
 .site-footer .social-icons
 {
   text-align:right
 }
+
 .site-footer .social-icons a
 {
   width:40px;
@@ -177,48 +205,63 @@
   border-radius:100%;
   background-color:#33353d
 }
+
 .copy
 { 
   position: absolute;
   bottom: 10px;
   right:10px;
-
 }
 
 @media (max-width:991px)
 {
-  .site-footer [class^=col-]
+  #primary_nav_wrap .site-footer [class^=col-]
   {
     margin-bottom:30px
   }
 }
-@media (max-width:767px)
+@media (width:100%)
 {
-  .site-footer
+  #primary_nav_wrap .site-footer
   {
-    padding-bottom:0
+    padding-bottom:0;
+    height: 200px;
+    vertical-align: center;
   }
-  .site-footer .copyright-text,.site-footer .social-icons
+  #primary_nav_wrap .site-footer .copyright-text,.site-footer .social-icons
   {
-    text-align:center
+    text-align:center;
+    vertical-align: center;
   }
 }
-@media (max-width:991px)
+
+@media (width:65%)
 {
-  .site-footer [class^=col-]
+  #primary_nav_wrap .site-footer
   {
-    margin-bottom:30px
+    padding-bottom:0;
+    height: 100px;
+    vertical-align: center;
+  }
+  #primary_nav_wrap .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center;
+    vertical-align: center;
   }
 }
-@media (max-width:767px)
+
+@media (width:35%)
 {
-  .site-footer
+  #primary_nav_wrap .site-footer
   {
-    padding-bottom:0
+    padding-bottom:0;
+    height: 100px;
+    vertical-align: center;
   }
-  .site-footer .copyright-text,.site-footer .social-icons
+  #primary_nav_wrap .site-footer .copyright-text,.site-footer .social-icons
   {
-    text-align:center
+    text-align:center;
+    vertical-align: center;
   }
 }
 
@@ -276,9 +319,9 @@
         <h1 id="Demon Slayer">Demon Slayer</h1>
         <h3>Star</h3>
             <ul style="list-style-type: circle;">
-                <li>花江夏樹</li>
-                <li>下野紘</li>
-                <li>松岡禎丞</li>
+                <p>花江夏樹</p>
+                <p>下野紘</p>
+                <p>松岡禎丞</p>
             </ul>
     </hgroup>
     <section>
@@ -296,9 +339,9 @@
         <h1 id="That Time I Got Reincarnated as a Slime">That Time I Got Reincarnated as a Slime</h1>
         <h3>Star</h3>
             <ul style="list-style-type: circle;">
-                <li>岡咲美保</li>
-                <li>前野智昭</li>
-                <li>花守由美里</li>
+                <p>岡咲美保</p>
+                <p>前野智昭</p>
+                <p>花守由美里</p>
             </ul>     
         </hgroup>
         <section>   
@@ -317,9 +360,9 @@
         <h1 id="Jujutsu Kaisen">Jujutsu Kaisen</h1>
         <h3>Star</h3>
             <ul style="list-style-type: circle;">
-                <li>榎木淳彌</li>
-                <li>內田雄馬</li>
-                <li>中村悠一</li>
+                <p>榎木淳彌</p>
+                <p>內田雄馬</p>
+                <p>中村悠一</p>
             </ul>
         </hgroup>
         <section>
@@ -338,9 +381,9 @@
         <h1 id="Attacking Giant">Attacking Giant</h1>
          <h3>Star</h3>
             <ul style="list-style-type: circle;">
-                <li>梶裕貴</li>
-                <li>石川由依</li>
-                <li>井上麻里奈</li>
+                <p>梶裕貴</p>
+                <p>石川由依</p>
+                <p>井上麻里奈</p>
             </ul>            
         </hgroup>
         <section>
@@ -359,9 +402,9 @@
         <h1 id="Anohana: The Flower We Saw That Day">Anohana: The Flower We Saw That Day</h1>
         <h3>Star</h3>
             <ul style="list-style-type: circle;">
-                <li>入野自由</li>
-                <li>茅野愛衣</li>
-                <li>戶松遙</li>
+                <p>入野自由</p>
+                <p>茅野愛衣</p>
+                <p>戶松遙</p>
             </ul> 
         </hgroup>
         <section>           

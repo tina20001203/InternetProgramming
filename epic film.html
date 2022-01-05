@@ -101,14 +101,28 @@
 {
 	display:inline;
 }
-        h1 {font-family: 微軟正黑體;}
-        h2 {font-family: 微軟正黑體;}
-        h4 {text-indent: 3% ; font-family: 微軟正黑體;}
-        p {font-weight: bold; font: 18px; text-indent: 3%;; font-family: 微軟正黑體;}
 
+h1 {
+  font-family: 微軟正黑體;
+  padding-top: 23px;
+  color: #e66565;
+  font: 26px;
+  }
 
-        .site-footer
-{
+  h3 {
+  font-family: 微軟正黑體;
+  padding: 23px 0;
+  }
+
+  p {
+  font-weight: bold; 
+  font: 12px; 
+  text-indent: 3%; 
+  font-family: 微軟正黑體;
+  padding: 5px 0;
+  }
+
+  .site-footer{
   background-color:#afabab;
   padding:45px 200px;
   font-size:15px;
@@ -186,38 +200,53 @@
 
 @media (max-width:991px)
 {
-  .site-footer [class^=col-]
+  #primary_nav_wrap .site-footer [class^=col-]
   {
     margin-bottom:30px
   }
 }
-@media (max-width:767px)
+@media (width:100%)
 {
-  .site-footer
+  #primary_nav_wrap .site-footer
   {
-    padding-bottom:0
+    padding-bottom:0;
+    height: 200px;
+    vertical-align: center;
   }
-  .site-footer .copyright-text,.site-footer .social-icons
+  #primary_nav_wrap .site-footer .copyright-text,.site-footer .social-icons
   {
-    text-align:center
+    text-align:center;
+    vertical-align: center;
   }
 }
-@media (max-width:991px)
+
+@media (width:65%)
 {
-  .site-footer [class^=col-]
+  #primary_nav_wrap .site-footer
   {
-    margin-bottom:30px
+    padding-bottom:0;
+    height: 100px;
+    vertical-align: center;
+  }
+  #primary_nav_wrap .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center;
+    vertical-align: center;
   }
 }
-@media (max-width:767px)
+
+@media (width:35%)
 {
-  .site-footer
+  #primary_nav_wrap .site-footer
   {
-    padding-bottom:0
+    padding-bottom:0;
+    height: 100px;
+    vertical-align: center;
   }
-  .site-footer .copyright-text,.site-footer .social-icons
+  #primary_nav_wrap .site-footer .copyright-text,.site-footer .social-icons
   {
-    text-align:center
+    text-align:center;
+    vertical-align: center;
   }
 }
 
@@ -275,9 +304,9 @@
     <h1 id="Game of Thrones">Game of Thrones</h1>
     <h3>Star</h3>
         <ul style="list-style-type: circle;">
-            <li>Peter Hayden Dinklage</li>
-            <li>Nikolaj Coster-Waldau</li>
-            <li>Lena Headey</li>
+            <p>Peter Hayden Dinklage</p>
+            <p>Nikolaj Coster-Waldau</p>
+            <p>Lena Headey</p>
         </ul>
     </hgroup>
     <section>
@@ -296,9 +325,9 @@
     <h1 id="Money Heist">Money Heist</h1>
     <h3>Star</h3>
         <ul style="list-style-type: circle;">
-            <li>Úrsula Corberó</li>
-            <li>Álvaro Morte</li>
-            <li>Itziar Ituño</li>
+            <p>Úrsula Corberó</p>
+            <p>Álvaro Morte</p>
+            <p>Itziar Ituño</p>
         </ul> 
     </hgroup>
     <section>       
@@ -317,9 +346,9 @@
     <h1 id="The White Queen">The White Queen</h1>
     <h3>Star</h3>
         <ul style="list-style-type: circle;">
-            <li>Aneurin Barnard</li>
-            <li>Rebecca Ferguson</li>
-            <li>Max Irons</li>
+            <p>Aneurin Barnard</p>
+            <p>Rebecca Ferguson</p>
+            <p>Max Irons</p>
         </ul>
     </hgroup>
     <section>
@@ -338,9 +367,9 @@
     <h1 id="13 Reasons Why">13 Reasons Why</h1>
     <h3>Star</h3>
         <ul style="list-style-type: circle;">
-            <li>Dylan Christopher Minnette</li>
-            <li>Katherine Langford</li>
-            <li>Christian Lee Navarro</li>
+            <p>Dylan Christopher Minnette</p>
+            <p>Katherine Langford</p>
+            <p>Christian Lee Navarro</p>
         </ul>
     </hgroup>
     <section>            
@@ -359,9 +388,9 @@
     <h1 id="The Last Kingdom">The Last Kingdom</h1>
     <h3>Star</h3>
         <ul style="list-style-type: circle;">
-            <li>Alexander Dreymon</li>
-            <li>Emily Cox</li>
-            <li>Amy Wren</li>
+            <p>Alexander Dreymon</p>
+            <p>Emily Cox</p>
+            <p>Amy Wren</p>
         </ul> 
     </hgroup>
     <section>           

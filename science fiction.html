@@ -101,14 +101,28 @@
 {
 	display:inline;
 }
-        h1 {font-family: 微軟正黑體;}
-        h2 {font-family: 微軟正黑體;}
-        h4 {text-indent: 3% ; font-family: 微軟正黑體;}
-        p {font-weight: bold; font: 18px; text-indent: 3%;; font-family: 微軟正黑體;}
 
+  h1 {
+  font-family: 微軟正黑體;
+  padding-top: 23px;
+  color: #e66565;
+  font: 26px;
+  }
 
-        .site-footer
-{
+  h3 {
+  font-family: 微軟正黑體;
+  padding: 23px 0;
+  }
+
+  p {
+  font-weight: bold; 
+  font: 12px; 
+  text-indent: 3%; 
+  font-family: 微軟正黑體;
+  padding: 5px 0;
+  }
+
+  .site-footer {
   background-color:#afabab;
   padding:45px 200px;
   font-size:15px;
@@ -186,38 +200,53 @@
 
 @media (max-width:991px)
 {
-  .site-footer [class^=col-]
+  #primary_nav_wrap .site-footer [class^=col-]
   {
     margin-bottom:30px
   }
 }
-@media (max-width:767px)
+@media (width:100%)
 {
-  .site-footer
+  #primary_nav_wrap .site-footer
   {
-    padding-bottom:0
+    padding-bottom:0;
+    height: 200px;
+    vertical-align: center;
   }
-  .site-footer .copyright-text,.site-footer .social-icons
+  #primary_nav_wrap .site-footer .copyright-text,.site-footer .social-icons
   {
-    text-align:center
+    text-align:center;
+    vertical-align: center;
   }
 }
-@media (max-width:991px)
+
+@media (width:65%)
 {
-  .site-footer [class^=col-]
+  #primary_nav_wrap .site-footer
   {
-    margin-bottom:30px
+    padding-bottom:0;
+    height: 100px;
+    vertical-align: center;
+  }
+  #primary_nav_wrap .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center;
+    vertical-align: center;
   }
 }
-@media (max-width:767px)
+
+@media (width:35%)
 {
-  .site-footer
+  #primary_nav_wrap .site-footer
   {
-    padding-bottom:0
+    padding-bottom:0;
+    height: 100px;
+    vertical-align: center;
   }
-  .site-footer .copyright-text,.site-footer .social-icons
+  #primary_nav_wrap .site-footer .copyright-text,.site-footer .social-icons
   {
-    text-align:center
+    text-align:center;
+    vertical-align: center;
   }
 }
 
@@ -275,9 +304,9 @@
         <h1 id="The Matrix">The Matrix</h1>
         <h3>Star</h3>
             <ul style="list-style-type: circle;">
-                <li>Keanu Levy</li>
-                <li>Lawrence Fishburne</li>
-                <li>Kelly-Ann Moss</li>
+                <p>Keanu Levy</p>
+                <p>Lawrence Fishburne</p>
+                <p>Kelly-Ann Moss</p>
             </ul>
         </hgroup>
         <section>
@@ -296,9 +325,9 @@
         <h1 id="Stranger Things">Stranger Things</h1>
          <h3>Star</h3>
             <ul style="list-style-type: circle;">
-                <li>David Hubble</li>
-                <li>Finn Wolfhard</li>
-                <li>Millie Barbie Brown</li>
+                <p>David Hubble</p>
+                <p>Finn Wolfhard</p>
+                <p>Millie Barbie Brown</p>
             </ul> 
         </hgroup>
         <section>       
@@ -317,9 +346,9 @@
         <h1 id="The Umbrella Academy">The Umbrella Academy</h1>
         <h3>Star</h3>
             <ul style="list-style-type: circle;">
-                <li>Elliott Page</li>
-                <li>Amy Revel-Lampman</li>
-                <li>Aidan Geller</li>
+                <p>Elliott Page</p>
+                <p>Amy Revel-Lampman</p>
+                <p>Aidan Geller</p>
             </ul>
         </hgroup>
         <section>
@@ -338,9 +367,9 @@
         <h1 id="Sense8">Sense8</h1>
         <h3>Star</h3>
             <ul style="list-style-type: circle;">
-                <li>Amy Emin</li>
-                <li>Pei Dou Na</li>
-                <li>Jamie Clayton</li>
+                <p>Amy Emin</p>
+                <p>Pei Dou Na</p>
+                <p>Jamie Clayton</p>
             </ul>  
         </hgroup>
         <section>          
@@ -359,9 +388,9 @@
         <h1 id="Lucifer">Lucifer</h1>
         <h3>Star</h3>
             <ul style="list-style-type: circle;">
-                <li>Tom Ellis</li>
-                <li>Lauren German</li>
-                <li>Kevin Alexandra</li>
+                <p>Tom Ellis</p>
+                <p>Lauren German</p>
+                <p>Kevin Alexandra</p>
             </ul>  
         </hgroup>
         <section>           

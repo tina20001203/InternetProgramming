@@ -101,14 +101,27 @@
 {
 	display:inline;
 }
-        h1 {font-family: 微軟正黑體;}
-        h2 {font-family: 微軟正黑體;}
-        h4 {text-indent: 3% ; font-family: 微軟正黑體;}
-        p {font-weight: bold; font: 18px; text-indent: 3%;; font-family: 微軟正黑體;}
-        
+h1 {
+  font-family: 微軟正黑體;
+  padding-top: 23px;
+  color: #e66565;
+  font: 26px;
+  }
 
-        .site-footer
-{
+  h3 {
+  font-family: 微軟正黑體;
+  padding: 23px 0;
+  }
+
+  p {
+  font-weight: bold; 
+  font: 12px; 
+  text-indent: 3%; 
+  font-family: 微軟正黑體;
+  padding: 5px 0;
+  }
+  
+  .site-footer {
   background-color:#afabab;
   padding:45px 200px;
   font-size:15px;
@@ -186,38 +199,53 @@
 
 @media (max-width:991px)
 {
-  .site-footer [class^=col-]
+  #primary_nav_wrap .site-footer [class^=col-]
   {
     margin-bottom:30px
   }
 }
-@media (max-width:767px)
+@media (width:100%)
 {
-  .site-footer
+  #primary_nav_wrap .site-footer
   {
-    padding-bottom:0
+    padding-bottom:0;
+    height: 200px;
+    vertical-align: center;
   }
-  .site-footer .copyright-text,.site-footer .social-icons
+  #primary_nav_wrap .site-footer .copyright-text,.site-footer .social-icons
   {
-    text-align:center
+    text-align:center;
+    vertical-align: center;
   }
 }
-@media (max-width:991px)
+
+@media (width:65%)
 {
-  .site-footer [class^=col-]
+  #primary_nav_wrap .site-footer
   {
-    margin-bottom:30px
+    padding-bottom:0;
+    height: 100px;
+    vertical-align: center;
+  }
+  #primary_nav_wrap .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center;
+    vertical-align: center;
   }
 }
-@media (max-width:767px)
+
+@media (width:35%)
 {
-  .site-footer
+  #primary_nav_wrap .site-footer
   {
-    padding-bottom:0
+    padding-bottom:0;
+    height: 100px;
+    vertical-align: center;
   }
-  .site-footer .copyright-text,.site-footer .social-icons
+  #primary_nav_wrap .site-footer .copyright-text,.site-footer .social-icons
   {
-    text-align:center
+    text-align:center;
+    vertical-align: center;
   }
 }
 
@@ -275,9 +303,9 @@
             <h1 id="The End of the F***ing World">The End of the F***ing World</h1>
             <h3>Star</h3>
             <ul style="list-style-type: circle;">
-                <li>Alex Lowther</li>
-                <li>Jessica Baden</li>
-                <li>Jamal Wellen</li>
+                <p>Alex Lowther</p>
+                <p>Jessica Baden</p>
+                <p>Jamal Wellen</p>
             </ul>
         </hgroup>
         <section>
@@ -296,10 +324,10 @@
             <h1 id="Brooklyn Nine-Nine">Brooklyn Nine-Nine</h1>
             <h3>Star</h3>
             <ul style="list-style-type: circle;">
-            <li>Andy Shanberg</li>
-            <li>Stephanie Beatrice</li>
-            <li>Terry Cruise</li>
-        </ul>
+              <p>Andy Shanberg</p>
+              <p>Stephanie Beatrice</p>
+              <p>Terry Cruise</p>
+            </ul>
         </hgroup>
         <section>
             <h3>Trailer</h3>
@@ -317,9 +345,9 @@
             <h1 id="Suits">Suits</h1>
             <h3>Star</h3>
             <ul style="list-style-type: circle;">
-                <li>Gabriel Mackie</li>
-                <li>Patrick J Adams</li>
-                <li>Rick Hoffma</li>
+                <p>Gabriel Mackie</p>
+                <p>Patrick J Adams</p>
+                <p>Rick Hoffma</p>
             </ul>
         </hgroup>
         <section>
@@ -338,9 +366,9 @@
             <h1 id="Friends">Friends</h1>
             <h3>Star</h3>
             <ul style="list-style-type: circle;">
-                <li>Jennifer Aniston</li>
-                <li>Courteney Cox</li>
-                <li>Lisa Kudrow</li>
+                <p>Jennifer Aniston</p>
+                <p>Courteney Cox</p>
+                <p>Lisa Kudrow</p>
             </ul>
         </hgroup>
         <section>
@@ -359,9 +387,9 @@
             <h1 id="How I Met Your Mother">How I Met Your Mother</h1>
             <h3>Star</h3>
             <ul style="list-style-type: circle;">
-                <li>Josh Radnor</li>
-                <li>Jason Seager</li>
-                <li>Neil Patrick Harris</li>
+                <p>Josh Radnor</p>
+                <p>Jason Seager</p>
+                <p>Neil Patrick Harris</p>
             </ul>
         </hgroup>
         <section>
